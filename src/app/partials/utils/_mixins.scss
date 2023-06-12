@@ -1,0 +1,12 @@
+@mixin background-image {
+    background-size: cover;
+    width: $full-percent;
+    height: $full-vh;
+    overflow: $no-overflow;
+}
+
+@mixin centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
