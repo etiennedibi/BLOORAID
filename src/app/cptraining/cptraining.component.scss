@@ -1,0 +1,159 @@
+@import "../../app/partials/utils/variables";
+
+//BLOC 1
+.bloc-1 {
+    height: $full-vh;
+    padding: $null;
+    @include centered;
+    .row {
+        width: $full-percent;
+        height: $full-percent;
+        margin: $null;
+        @include centered;
+        .content-left {
+            @include started;
+            height: $full-percent;
+            .logo-block {
+                .div {
+                    border-radius: 50%;
+                    border: 1px solid $silver;
+                    height: 160px;
+                    width: 160px;
+                    padding: 25px;
+                    @include centered;
+                    img {
+                        cursor: pointer;
+                        height: 120px;
+                    }
+                }
+            }
+            .buttons {
+                button {
+                    background: $principal-gradient;
+                    color: $white;
+                    font-family: $family-bold;
+                    margin-bottom: 5px;
+                }
+            }
+            .texts {
+                @include started;
+                p {
+                    width: 85%;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .content-image {
+            height: 90%;
+            margin-top: 15vh;
+            background: url('../../assets/backgrounds/Image01\ \(1\).png');
+            background-size: contain;
+            background-repeat: $no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+//BLOC 2
+.bloc-2{
+    overflow-y: $no-overflow;
+    height: 80vh;
+    margin-top: 15vh;
+    padding: $null;
+    @include centered;
+    .row {
+        width: $full-percent;
+        height: $full-percent;
+        margin: $null;
+        @include centered;
+        .button {
+            width: $full-percent;
+            @include centered;
+            button {
+                background: $principal-gradient;
+                color: $white;
+                font-family: $family-bold;
+                margin-bottom: 5px;
+            }
+        }
+        .coffrets {
+            width: $full-percent;
+            @include centered;
+            //SWIPER IN ACCORDION
+            .swiper{
+                width: $full-percent;
+                margin: $null;
+                padding: $null;
+                margin-top: -10vh;
+                height: 350px;
+                @include centered;
+                .swiper-slide{
+                    @include centered;
+                    height: $full-percent;
+                    border: 2px solid $silver;
+                    padding: $null;
+                    padding: $null;
+                    border-radius: 10px;
+                }
+
+                .swiper-button-prev, .swiper-button-next {
+                    color: $text-color;
+                    background: white;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 1px solid $silver;
+                    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+                    &::after, &::after{
+                        font-size: 15px!important;
+                    }
+                }
+
+                .swiper-button-prev {
+                    margin-left: 0px;
+                }
+                .swiper-button-next {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+    }
+}
+
+//BLOC 3
+.bloc-3 {
+    overflow: $no-overflow;
+    height: $full-vh;
+    width: $full-percent;
+    padding: $null;
+    @include centered;
+    .button {
+        width: $full-percent;
+        @include centered;
+        button {
+            background: $principal-gradient;
+            color: $white;
+            font-family: $family-bold;
+            margin-bottom: 5px;
+        }
+    }
+    .coffrets {
+        width: $full-percent;
+        @include centered;
+        .row{
+            width: 70%;
+            @include centered;
+            p {
+                font-size: 1.2rem;
+                margin-top: 5vh;
+            }
+            video {
+                border: 2px solid $silver;
+                border-radius: 5px;
+                padding: 20px;
+                margin-top: 5vh;
+            }
+        }
+    }
+}

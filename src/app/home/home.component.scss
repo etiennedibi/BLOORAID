@@ -1,0 +1,277 @@
+@import "../../app/partials/utils/variables";
+
+//IMAGE DE COUVERTURE BLOC 1
+.Coverage {
+    @include background-image;
+    @include centered;
+    background: linear-gradient(360deg, rgba(13, 13, 13, 6), #0D0D0D5d), url('../../assets/medias/home/Image1.jpg');
+    background-repeat: $no-repeat;
+    background-size: cover;
+    color: $white;
+    .Coverage-blc {
+        width: $full-percent;
+        margin-top: 4vh;
+        text-align: center;
+        @include centered;
+        .row {
+            img {
+                height: 180px;
+                padding: 30px;
+                border-radius: 50%;
+                background: rgba(242, 242, 242, .5);
+                cursor: pointer;
+            }
+            .h1 {
+                font-family: $family-light;
+                font-size: $size-great;
+            }
+            .h1-2 {
+                font-family: $family-bold;
+                font-size: $size-xl-great;
+            }
+            h4 {
+                font-weight: lighter;
+                font-family: $family-light;
+            }
+            .div{
+                background: $dark;
+                height: 27vh;
+                margin-top: 8vh;
+                cursor: pointer;
+                position: relative;
+                @include centered;
+                h2 {
+                    font-family: $family-medium;
+                    margin-top: 2vh;
+                }
+            }
+            .div-2 {
+                height: 35vh;
+                background: $principal-gradient;
+                margin-top: 0;
+            }
+        }
+    }
+    .texts-block, .divs-block {
+        margin-top: 8vh;
+        @include centered;
+        .row {
+            width: $full-percent;
+            @include centered;
+        }
+    }
+}
+
+
+//NOS LOGICIELS ET PLATEFORME BLOC 2
+.Softwares {
+    height: 95vh;
+    @include centered;
+    .row {
+        height: $full-percent;
+        width: $full-percent;
+        @include centered;
+        .bloostore {
+            padding: $null;
+            @include started;
+            .row {
+                padding: $null;
+                @include started;
+                .shouz{
+                    @include ended;
+                    .row {
+                        @include ended;
+                        text-align: end;
+                    }
+                }
+                h2 {
+                    color: $black;
+                    font-family: $family-medium;
+                }
+                hr {
+                    background: $principal-gradient;
+                    height: 5px;
+                    width: 60px;
+                    margin-left: 12px;
+                    margin-bottom: 7vh;
+                }
+                .p-bloostore-texts {
+                    padding-right: 22%;
+                    .btn-more {
+                        background: $principal-gradient;
+                        margin-top: 7vh;
+                        color: $white;
+                        font-family: $family-bold;
+                    }
+                }
+            }
+        }
+    }
+}
+.details {
+    h3 {
+        color: $pink2;
+        font-family: $family-bold;
+    }
+    h4 {
+        color: $black;
+        font-weight: $bold;
+    }
+    p {
+        font-size: $size-small;
+        color: $text-color;
+    }
+    .btn-details {
+        color: $pink2;
+        font-family: $family-bold;
+        cursor: pointer;
+        margin-top: 1vh;
+    }
+}
+
+//NOS PROGRAMMES DE FORMATION BLOC 3
+.Formations {
+    height: $full-vh;
+    background: $silver-2;
+    @include centered;
+    .row {
+        height: $full-percent;
+        width: $full-percent;
+        @include centered;
+        h2 {
+            color: $black;
+            font-family: $family-medium;
+            text-align: center;
+        }
+        hr {
+            background: $principal-gradient;
+            height: 5px;
+            width: 60px;
+            margin-left: 48%;
+        }
+        .formations-background {
+            background: url('../../assets/medias/home/enfant.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 75vh;
+            margin-top: -4vh;
+        }
+        .formations-items {
+            height: 75vh;
+            padding: $null;
+            @include centered;
+            margin-left: 2%;
+            margin-top: -4vh;
+            .row {
+                @include centered;
+                height: $full-percent;
+                width: $full-percent;
+                padding: $null;
+                .formation {
+                    height: 30%;
+                    margin: $null;
+                    padding: 25px;
+                    width: $full-percent;
+                    border: 1px solid silver;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    h3 {
+                        font-family: $family-medium;
+                    }
+                }
+                .training{
+                    background: $principal-gradient;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+//AUDITS DE SÉCURITÉ BLOC 4
+.Audits {
+    height: 95vh;
+    @include centered;
+    .row {
+        height: $full-percent;
+        width: $full-percent;
+        @include centered;
+        .checkup {
+            text-align: center
+        }
+        .reporting{
+            @include ended;
+            .row {
+                @include ended;
+                text-align: end;
+            }
+        }
+        h2 {
+            color: $black;
+            font-family: $family-medium;
+            text-align: center;
+            margin-top: 5vh;
+            hr {
+                background: $principal-gradient;
+                height: 5px;
+                width: 60px;
+                margin-left: 48%;
+            }
+        }
+
+        .btn-more {
+            background: $pink2;
+            width: auto;
+            color: $white;
+            font-family: $family-bold;
+        }
+    }
+}
+
+//MOT DU CEO BLOC 5
+.CEO {
+    height: $full-vh;
+    background: $silver-2;
+    @include centered;
+    .row {
+        height: $full-percent;
+        width: $full-percent;
+        @include centered;
+        h2 {
+            color: $black;
+            font-family: $family-medium;
+            text-align: center;
+        }
+        hr {
+            background: $principal-gradient;
+            height: 5px;
+            width: 60px;
+            margin-left: 48%;
+        }
+        .ceo-background {
+            background: url('../../assets/medias/home/ceo.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 70vh;
+            margin-left: 5%;
+            .row {
+                @include centered;
+                .ceo-words {
+                    background: $white;
+                    border-radius: 10px;
+                    height: 60%;
+                    position: relative;
+                    left: -40%;
+                    padding: 30px;
+                    @include centered;
+                    p {
+                        font-size: $size-middle;
+                    }
+                    h5 {
+                        font-family: $family-bold;
+                    }
+                }
+            }
+        }
+    }
+}

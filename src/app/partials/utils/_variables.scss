@@ -2,25 +2,32 @@
 @import "../utils/mixins";
 
 /* les couleurs du site */
-$black: #565151;
+$text-color: #575252;
+$silver: #EAECEE;
+$silver-2: #F8F9F9;
 
-$principal-gradient: linear-gradient(90deg, #008d0d, #336699);
+$black: #0D0D0D;
+$black-rgba: rgba(13, 13, 13, 1);
 
+$dark: #26313c;
+$dark-rgba: rgba(38,49,60,255);
 
-$green: #00172E;
-$green-degraded-one: #00172Eb8;
-$green-degraded-two: #397f60b8;
+$dark2: #212428;
+$dark2-rgba: rgba(33,36,40,255);
 
-$blue: #336699;
-$blue-degraded-one: #336699a6;
+$white: #F2F2F2;
+$white-rgba: rgba(242, 242, 242, 1);
 
+$violet: #73378C;
+$violet-rgba: rgba(115, 55, 140, 1);
 
+$pink: #F21B7F;
+$pink-rgba: rgba(242, 27, 127, 1);
 
-$white: #f4f4f4;
-$white-rgb: rgb(244, 244, 244);
-$white-rgba: rgba(255, 255, 255, 0.15);
+$pink2: #BF267A;
+$pink2-rgba: rgba(191, 38, 122, 1);
 
-$whiteTwo: #dcdcdc;
+$principal-gradient: linear-gradient(90deg, #73378C, #BF267A);
 
 
 /* les dimensions, taille et poids de base */
@@ -33,14 +40,15 @@ $bold: bold;
 
 $null: 0;
 $no-overflow: hidden;
+$no-repeat: no-repeat;
 
 $size-normal: 1rem;
-$size-small: 0.8rem;
+$size-small: 0.9rem;
 $size-small-lg: 0.7rem;
 $size-middle: 1.6rem;
 $size-middle-lg: 1.3rem;
 $size-lg-great: 2.3rem;
-$size-great: 2.5rem;
+$size-great: 2.7rem;
 $size-xl-great: 3rem;
 
 

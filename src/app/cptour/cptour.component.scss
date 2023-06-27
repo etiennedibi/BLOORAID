@@ -1,0 +1,262 @@
+@import "../../app/partials/utils/variables";
+
+//BLOC 1
+.bloc-1 {
+    height: $full-vh;
+    padding: $null;
+    @include centered;
+    .row {
+        width: $full-percent;
+        height: $full-percent;
+        margin: $null;
+        @include centered;
+        .content-left {
+            @include started;
+            height: $full-percent;
+            .logo-block {
+                .div {
+                    border-radius: 50%;
+                    border: 1px solid $silver;
+                    height: 160px;
+                    width: 160px;
+                    padding: 25px;
+                    @include centered;
+                    img {
+                        cursor: pointer;
+                        height: 120px;
+                    }
+                }
+            }
+            .buttons {
+                position: relative;
+                width: 150%;
+                button {
+                    background: $principal-gradient;
+                    color: $white;
+                    font-family: $family-bold;
+                    margin-bottom: 5px;
+                }
+            }
+            .texts {
+                @include started;
+                p {
+                    width: 85%;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .content-image {
+            height: 95%;
+            margin-top: 5vh;
+            background: url('../../assets/medias/products/cptour/b43988ced263be464765cac80ce0880c.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: $no-repeat;
+        }
+    }
+}
+
+
+//BLOC 2
+.bloc-2{
+    overflow-y: $no-overflow;
+    height: 80vh;
+    margin-top: 15vh;
+    padding: $null;
+    @include centered;
+    .row {
+        width: $full-percent;
+        height: $full-percent;
+        margin: $null;
+        @include centered;
+        .button {
+            width: $full-percent;
+            @include centered;
+            margin-bottom: 5vh;
+            button {
+                background: $principal-gradient;
+                color: $white;
+                font-family: $family-bold;
+                margin-bottom: 5px;
+            }
+        }
+        .coffrets {
+            width: $full-percent;
+            @include centered;
+            //SWIPER IN ACCORDION
+            .swiper{
+                width: $full-percent;
+                margin: $null;
+                padding: $null;
+                height: 65vh;
+                @include centered;
+                .swiper-slide{
+                    @include centered;
+                    height: $full-percent;
+                    border: 2px solid $silver;
+                    padding: $null;
+                    padding: $null;
+                    border-radius: 10px;
+                    .row {
+                        @include centered;
+                        margin: $null;
+                        padding: $null;
+                        width: $full-percent;
+                        height: $full-percent;
+                        .blc-img {
+                            width: $full-percent;
+                            height: 68%;
+                            background: linear-gradient(160deg, rgba(253, 254, 254, .6), #FDFEFE5d), url('../../assets/medias/products/cptour/[removal.ai]_tmp-6496b15cf25c4.png');
+                            background-size: contain;
+                            background-repeat: $no-repeat;
+                            background-position: center;
+                        }
+                        .blc-img-2 {
+                            background: linear-gradient(160deg, rgba(253, 254, 254, .6), #FDFEFE5d), url('../../assets/medias/products/cptour/[removal.ai]_tmp-6496b17233c58.png');
+                            width: $full-percent;
+                            height: 68%;
+                            background-size: contain;
+                            background-repeat: $no-repeat;
+                            background-position: center;
+                        }
+                        .blc-img-3 {
+                            background: linear-gradient(160deg, rgba(253, 254, 254, .6), #FDFEFE5d), url('../../assets/medias/products/cptour/Image01.png');
+                            width: $full-percent;
+                            height: 68%;
+                            background-size: contain;
+                            background-repeat: $no-repeat;
+                            background-position: center;
+                        }
+                        .blc-img-4 {
+                            background: linear-gradient(160deg, rgba(253, 254, 254, .6), #FDFEFE5d), url('../../assets/medias/products/cptour/b43988ced263be464765cac80ce0880c.png');
+                            width: $full-percent;
+                            height: 68%;
+                            background-size: contain;
+                            background-repeat: $no-repeat;
+                            background-position: center;
+                        }
+                        .blc-top-img {
+                            height: 10%;
+                            width: $full-percent;
+                            @include centered;
+                            .top-start {
+                                @include started;
+                                button {
+                                    border: 1px solid $silver;
+                                    border-radius: 5px;
+                                }
+                            }
+                            .top-center {
+                                @include centered;
+                                button {
+                                    border: 1px solid $silver;
+                                    border-radius: 5px;
+                                }
+                            }
+                            .top-end {
+                                @include ended;
+                                button {
+                                    border: 1px solid $silver;
+                                    border-radius: 5px;
+                                }
+                            }
+
+                        }
+                        .blc-down-img {
+                            height: 22%;
+                            width: $full-percent;
+                            @include centered;
+                            .down-title {
+                                margin-top: 3px;
+                                text-align: center;
+                                h6 {
+                                    font-family: $family-bold;
+                                    color: $black;
+                                    margin-top: 1vh;
+                                    border: 1px solid $silver;
+                                }
+                                p {
+                                    font-size: $size-small-lg;
+                                    color: $text-color;
+                                    margin-top: -0.5vh;
+                                }
+                            }
+                            .down-texts {
+                                padding: $null;
+                                .start {
+                                    @include centered;
+                                    p {
+                                        font-size: $size-small;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .swiper-button-prev, .swiper-button-next {
+                    color: $text-color;
+                    background: white;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 1px solid $silver;
+                    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+                    &::after, &::after{
+                        font-size: 15px!important;
+                    }
+                }
+
+                .swiper-button-prev {
+                    margin-left: 0px;
+                }
+                .swiper-button-next {
+                    margin-right: 0px;
+                }
+
+            }
+            .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
+                background-image: none;
+            }
+        }
+
+    }
+}
+
+//BLOC 3
+.bloc-3 {
+    overflow: $no-overflow;
+    width: $full-percent;
+    padding: $null;
+    margin-top: 15vh;
+    @include centered;
+    .button {
+        width: $full-percent;
+        @include centered;
+        button {
+            background: $principal-gradient;
+            color: $white;
+            font-family: $family-bold;
+            margin-bottom: 5px;
+        }
+    }
+    .coffrets {
+        width: $full-percent;
+        @include centered;
+        .row{
+            width: 70%;
+            @include centered;
+            p {
+                font-size: 1.2rem;
+                margin-top: 5vh;
+            }
+            .form {
+                border: 1px solid $silver;
+                border-radius: 5px;
+                padding: 30px;
+                margin-top: 2vh;
+            }
+        }
+    }
+}

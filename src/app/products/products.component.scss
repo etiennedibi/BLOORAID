@@ -1,0 +1,88 @@
+@import "../../app/partials/utils/variables";
+
+//IMAGE DE COUVERTURE BLOC 1
+.Coverage {
+    @include background-image;
+    @include centered;
+    background: linear-gradient(360deg, rgba(13, 13, 13, 6), #0D0D0D5d), url('../../assets/medias/products/img.jpeg');
+    background-repeat: $no-repeat;
+    background-size: cover;
+    color: $white;
+    overflow: $no-overflow;
+    .Coverage-blc {
+        width: $full-percent;
+        margin-top: 4vh;
+        text-align: center;
+        @include centered;
+        .row {
+            img {
+                position: relative;
+                height: 180px;
+                padding: 30px;
+                border-radius: 50%;
+                background: rgba(242, 242, 242, .5);
+                cursor: pointer;
+            }
+            .h1 {
+                font-family: $family-light;
+                font-size: $size-great;
+            }
+            .h1-2 {
+                font-family: $family-bold;
+                font-size: $size-xl-great;
+            }
+            .h2 {
+                font-weight: lighter;
+                font-family: $family-light;
+            }
+            .item-div {
+                display: none;
+                padding: 0 14% 0 12%;
+                .btn {
+                    background: $violet;
+                    color: $white;
+                    font-family: $family-bold;
+                    padding: 5px 50px 5px 50px;
+                    margin-left: 20px;
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                    display: none;
+                }
+                .btn-formation {
+                    background: $principal-gradient;
+                    width: 280px;
+                }
+                .btn-audit {
+                    background: $pink2;
+                }
+            }
+            .div{
+                height: 27vh;
+                margin-top: 8vh;
+                cursor: pointer;
+                position: relative;
+                @include centered;
+                h2 {
+                    font-family: $family-medium;
+                    margin-top: 2vh;
+                }
+            }
+            .div-1 {
+                background: $violet;
+            }
+            .div-2 {
+                background: $principal-gradient;
+            }
+            .div-3 {
+                background: $pink2;
+            }
+        }
+    }
+    .texts-block, .divs-block {
+        margin-top: 8vh;
+        @include centered;
+        .row {
+            width: $full-percent;
+            @include centered;
+        }
+    }
+}

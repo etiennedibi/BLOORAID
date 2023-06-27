@@ -1,0 +1,200 @@
+@import "../../app/partials/utils/variables";
+
+//CONTAINER COVER
+.container-fluid {
+    width: $full-percent;
+    height: $full-vh;
+    @include centered;
+    padding: $null;
+    .row {
+        width: $full-percent;
+        height: $full-percent;
+        @include centered;
+        margin: $null;
+        .Coverage-blc {
+            width: $full-percent;
+            text-align: center;
+            @include centered;
+            .div {
+                border-radius: 50%;
+                border: 1px solid $silver;
+                height: 160px;
+                width: 160px;
+                padding: 25px;
+                @include centered;
+                img {
+                    cursor: pointer;
+                    height: 120px;
+                }
+            }
+        }
+        .principal-event {
+            height: 70vh;
+            width: 60%;
+            margin: $null;
+            padding: $null;
+            margin-top: -3vh;
+            border: 1px solid $silver;
+            .row {
+                @include centered;
+                margin: $null;
+                padding: $null;
+                width: $full-percent;
+                height: $full-percent;
+                .blc-img {
+                    width: $full-percent;
+                    height: 68%;
+                    background: linear-gradient(160deg, rgba(253, 254, 254, .6), #FDFEFE5d), url('../../assets/backgrounds/Image01\ \(1\).png');
+                    background-size: contain;
+                    background-repeat: $no-repeat;
+                    background-position: center;
+                }
+                .blc-top-img {
+                    height: 10%;
+                    width: $full-percent;
+                    @include centered;
+                    .top-start {
+                        @include started;
+                        button {
+                            border: 1px solid $silver;
+                            border-radius: 5px;
+                            background: $pink2;
+                            color: $white;
+                            font-family: $family-bold;
+                        }
+                    }
+                    .top-center {
+                        @include centered;
+                        button {
+                            border: 1px solid $silver;
+                            border-radius: 5px;
+                        }
+                    }
+                    .top-end {
+                        @include ended;
+                        button {
+                            border: 1px solid $silver;
+                            border-radius: 5px;
+                        }
+                    }
+
+                }
+                .blc-down-img {
+                    height: 22%;
+                    width: $full-percent;
+                    @include centered;
+                    .down-title {
+                        margin-top: 3px;
+                        h6 {
+                            font-family: $family-bold;
+                            color: $pink2;
+                            margin-top: 1vh;
+                        }
+                        p {
+                            font-size: $size-small-lg;
+                            color: $text-color;
+                            margin-top: -0.5vh;
+                        }
+                    }
+                    .down-texts {
+                        padding: $null;
+                        .start {
+                            @include started;
+                            p {
+                                font-size: $size-small;
+                            }
+                        }
+                        .end {
+                            @include ended;
+                            button {
+                                border: 1px solid $silver;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//ACCORDION CONTAINER BLOC 2
+.accordion-blc {
+    h2 {
+        font-family: $family-bold;
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .accordion {
+        padding: $null;
+        margin: $null;
+        --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e");
+        .accordion-item {
+            padding: $null;
+            margin: $null;
+            margin-bottom: 15px;
+            border: none;
+            width: $full-percent;
+            .accordion-header {
+                border: 1px solid $silver;
+                border-radius: 5px;
+                .accordion-button:not(.collapsed) {
+                    margin: $null;
+                    color: $white !important;
+                    background: $principal-gradient !important;
+                    outline: none !important;
+                    font-family: $family-medium;
+                }
+                .accordion-button:focus {
+                    box-shadow: none;
+                    border-color: rgba(0,0,0,.125);
+                }
+            }
+        }
+        .accordion-collapse {
+            .accordion-body {
+                padding: $null;
+            }
+        }
+    }
+}
+
+//SWIPER IN ACCORDION
+.swiper{
+    width: $full-percent;
+    margin: $null;
+    padding: $null;
+    margin-top: 1vh;
+    height: 350px;
+    @include centered;
+    .swiper-slide{
+        @include centered;
+        height: $full-percent;
+        border: 1px solid $silver;
+        padding: $null;
+        padding: $null;
+        border-radius: 10px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        color: $text-color;
+        background: white;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid $silver;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        &::after, &::after{
+            font-size: 15px!important;
+        }
+    }
+
+    .swiper-button-prev {
+        margin-left: 0px;
+    }
+    .swiper-button-next {
+        margin-right: 0px;
+    }
+}

@@ -1,5 +1,5 @@
 @mixin background-image {
-    background-size: cover;
+    background-repeat: $no-repeat;
     width: $full-percent;
     height: $full-vh;
     overflow: $no-overflow;
@@ -9,4 +9,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin started {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@mixin ended {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

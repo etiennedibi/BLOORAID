@@ -1,0 +1,151 @@
+@import "../../app/partials/utils/variables";
+
+.container-fluid {
+    width: $full-percent;
+    height: $full-vh;
+    @include centered;
+    padding: $null;
+    .row {
+        width: $full-percent;
+        height: $full-percent;
+        @include centered;
+        margin: $null;
+    }
+}
+//LOGO BLOC 1
+.Coverage-blc {
+    width: $full-percent;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $silver;
+    height: 160px;
+    width: 160px;
+    padding: 25px;
+    @include centered;
+    img {
+        cursor: pointer;
+        height: 120px;
+    }
+}
+//BUTTONS BLOC 2
+.Buttons {
+    width: $full-percent;
+    text-align: center;
+    @include centered;
+    .btn {
+        width: 200px;
+        border: 1px solid $silver;
+        border-radius: 5px;
+        color: $text-color;
+        font-family: $family-light;
+        margin-left: 10px;
+    }
+}
+//SWIPERS BLOC 3
+.Swipers {
+    height: 50vh;
+    width: $full-percent;
+    padding: $null;
+    .row {
+        height: $full-percent;
+        width: $full-percent;
+        margin: $null;
+        .swiper{
+            width: $full-percent;
+            height: $full-percent;
+            @include centered;
+            .swiper-slide{
+                @include centered;
+                background: none;
+                padding: $null;
+                border-radius: 50%;
+                filter: blur(2.5px);
+                .rows {
+                    height: $full-percent;
+                    width: 90%;
+                    border-radius: 50%;
+                    @include centered;
+                    .logo-slide {
+                        @include centered;
+                        img {
+                            height: 220px;
+                        }
+                        .wac {
+                            position: relative;
+                            height: 260px;
+                        }
+                    }
+                    .cover-slide {
+                        height: 110px;
+                        width: $full-percent;
+                        border-radius: 5px;
+                        position: relative;
+                        text-align: center;
+                        @include centered;
+                        border: 1px solid $silver;
+                        background: white;
+                        margin: $null;
+                        display: none;
+                        h6 {
+                            font-family: $family-bold;
+                            color: $black;
+                            margin-top: 8px;
+                        }
+                        p {
+                            color: $text-color;
+                            font-size: $size-small;
+                            line-height: 19px;
+                            span {
+                                position: relative;
+                                top: 7px;
+                                a {
+                                    text-decoration: none;
+                                    color: $black;
+                                    font-family: $family-bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .swiper-slide-active{
+                filter: blur(0px);
+                width: 92%;
+                height: 92%;
+                .rows {
+                    border: 2px solid $silver;
+                    .cover-slide {
+                        display: block;
+                    }
+                }
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                color: $text-color;
+                background: white;
+                height: 40px;
+                width: 40px;
+                border-radius: 100%;
+                border: 1px solid $silver;
+                box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+                &::after, &::after{
+                    font-size: 15px!important;
+                }
+            }
+
+            .swiper-button-prev {
+                margin-left: 40px;
+            }
+            .swiper-button-next {
+                margin-right: 40px;
+            }
+        }
+        .Dev, .Cyber, .Market{
+            display: none;
+        }
+        .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
+            background-image: none;
+        }
+    }
+}
