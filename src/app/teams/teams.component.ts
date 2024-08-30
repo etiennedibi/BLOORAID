@@ -14,50 +14,16 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 export class TeamsComponent implements OnInit {
 
     ngOnInit(): void {
-
       $(document).ready(function () {
-        $(".gerance").click(function() {
-          $(".Swips").css("display", "none");
-          $(".btn").css("background", "transparent");
-          $(".btn").css("color", "#565151");
-          $(".btn").css("font-family", "light");
-          $(".Gerance").css("display", "block");
-          $(".gerance").css("background", "linear-gradient(90deg, #73378C, #BF267A)");
-          $(".gerance").css("color", "#F2F2F2");
-          $(".gerance").css("font-family", "bold");
-        });
+        $(".coverage-menu").css("display", "none");
 
-        $(".dev").click(function() {
-          $(".Swips").css("display", "none");
-          $(".btn").css("background", "transparent");
-          $(".btn").css("color", "#565151");
-          $(".btn").css("font-family", "light");
-          $(".Dev").css("display", "block");
-          $(".dev").css("background", "linear-gradient(90deg, #73378C, #BF267A)");
-          $(".dev").css("color", "#F2F2F2");
-          $(".dev").css("font-family", "bold");
+        $(".Coverage-logo").click(function() {
+          $(".coverage-menu").css("display", "flex");
+          $(".coverage-menu").fadeIn(500);
         });
-
-        $(".cyber").click(function() {
-          $(".Swips").css("display", "none");
-          $(".btn").css("background", "transparent");
-          $(".btn").css("color", "#565151");
-          $(".btn").css("font-family", "light");
-          $(".Cyber").css("display", "block");
-          $(".cyber").css("background", "linear-gradient(90deg, #73378C, #BF267A)");
-          $(".cyber").css("color", "#F2F2F2");
-          $(".cyber").css("font-family", "bold");
-        });
-
-        $(".market").click(function() {
-          $(".Swips").css("display", "none");
-          $(".btn").css("background", "transparent");
-          $(".btn").css("color", "#565151");
-          $(".btn").css("font-family", "light");
-          $(".Market").css("display", "block");
-          $(".market").css("background", "linear-gradient(90deg, #73378C, #BF267A)");
-          $(".market").css("color", "#F2F2F2");
-          $(".market").css("font-family", "bold");
+        $(".close-menu").click(function() {
+          $(".coverage-menu").css("display", "none");
+          $(".coverage-menu").fadeOut(500);
         });
       })
 

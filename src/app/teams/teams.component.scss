@@ -5,6 +5,7 @@
     height: $full-vh;
     @include centered;
     padding: $null;
+    overflow: hidden;
     .row {
         width: $full-percent;
         height: $full-percent;
@@ -18,13 +19,14 @@
     text-align: center;
     border-radius: 50%;
     border: 1px solid $silver;
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     padding: 25px;
     @include centered;
+    margin-top: 5vh;
     img {
         cursor: pointer;
-        height: 120px;
+        height: 100px;
     }
 }
 //BUTTONS BLOC 2
@@ -32,25 +34,23 @@
     width: $full-percent;
     text-align: center;
     @include centered;
+    margin-top: 4vh;
     .btn {
         width: 200px;
         border: 1px solid $silver;
         border-radius: 5px;
-        color: $text-color;
-        font-family: $family-light;
-        margin-left: 10px;
-    }
-    .gerance {
         background: $principal-gradient;
         color: $white;
         font-family: $family-bold;
+        margin-left: 10px;
     }
 }
 //SWIPERS BLOC 3
 .Swipers {
-    height: 50vh;
+    height: 65vh;
     width: $full-percent;
     padding: $null;
+    margin-top: 8vh;
     .row {
         height: $full-percent;
         width: $full-percent;
@@ -66,171 +66,66 @@
                 width: $full-percent;
                 height: $full-percent;
                 filter: blur(2.5px);
-                .cover-slide {
-                    height: 100px;
-                    width: 55%;
+                .row{
+                  padding: 0;
+                  margin: 0;
+                  width: $full-percent;
+                  height: $full-percent;
+                  .image-collab {
+                    padding: 0;
+                    margin: 0;
+                    width: $full-percent;
+                    height: $full-percent;
+                    @include centered;
+                    img {
+                      width: 72%;
+                      margin-top: -3vh;
+                    }
+                  }
+                  .info-collab {
+                    height: auto;
+                    width: 85%;
                     border-radius: 5px;
                     position: relative;
                     text-align: center;
                     @include centered;
-                    top: 8vh;
                     border: 1px solid $silver;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                     background: white;
                     margin: $null;
+                    margin-top: -40vh;
+                    padding: 10px;
                     display: none;
                     h6 {
-                        font-family: $family-bold;
-                        color: $black;
-                        margin-top: 20px;
+                      font-family: $family-bold;
+                      font-size: 1.1rem;
+                      color: $black;
+                      margin-top: 20px;
                     }
                     p {
-                        color: $text-color;
-                        line-height: 19px;
+                      color: $text-color;
+                      line-height: 19px;
+                      font-size: $size-small;
+                      margin-top: 10px;
                     }
+                  }
                 }
             }
-            .g1 {
-                background: url("../../assets/medias/teams/gerance/banner-01.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            //GERANCE
-            .g2 {
-                background: url("../../assets/medias/teams/gerance/Rose.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .g3 {
-                background: url("../../assets/medias/teams/gerance/team6.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .g4 {
-                background: url("../../assets/medias/teams/gerance/team4.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .g5 {
-                background: url("../../assets/medias/teams/gerance/Image2.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            //DEVEOPPEMENT
-            .d1 {
-                background: url("../../assets/medias/teams/developpement/Image4.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .d2 {
-                background: url("../../assets/medias/teams/developpement/assale.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .d3 {
-                background: url("../../assets/medias/teams/developpement/Image1.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .d4 {
-                background: url("../../assets/medias/teams/developpement/Image5.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            //CYBERSECURITE
-            .c1 {
-                background: url("../../assets/medias/teams/cybersecurite/team3.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .c2 {
-                background: url("../../assets/medias/teams/cybersecurite/Photo_Davis1-removebg-preview.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .c3 {
-                background: url("../../assets/medias/teams/cybersecurite/Image.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .c4 {
-                background: url("../../assets/medias/teams/cybersecurite/Image5.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            //MARKETING
-            .m1 {
-                background: url("../../assets/medias/teams/marketing/Image3.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .m2 {
-                background: url("../../assets/medias/teams/marketing/team4.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
-            .m3 {
-                background: url("../../assets/medias/teams/marketing/team5.png");
-                background-size: contain;
-                background-position: center;
-                background-repeat: $no-repeat;
-                width: $full-percent;
-                height: $full-percent;
-            }
 
-
-            .swiper-slide-active{
-                filter: blur(0px);
-                width: 92%;
-                height: 92%;
-                .cover-slide {
-                    display: block;
+          .swiper-slide-active{
+              filter: blur(0px);
+              width: $full-percent;
+              height: $full-percent;
+              margin-top: -4vh;
+              .cover-slide {
+                display: block;
+              }
+              .row {
+                .info-collab {
+                  display: flex;
                 }
-            }
+              }
+          }
 
             .swiper-button-prev, .swiper-button-next {
                 color: $text-color;
@@ -252,11 +147,220 @@
                 margin-right: 40px;
             }
         }
-        .Dev, .Cyber, .Market{
-            display: none;
+        .swip-mobile {
+          display: none;
         }
         .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
             background-image: none;
         }
     }
+}
+
+//MENUS
+.coverage-menu {
+    border: 2px solid $silver;
+    border-radius: 5px;
+    background: white;
+    position: fixed;
+    width: 20%;
+    height: 90vh;
+    top: 5vh;
+    left: 40%;
+    z-index: 10;
+    display: none;
+    .row {
+      .bi-x{
+        margin-top: 3vh;
+        cursor: pointer;
+      }
+      .logo-block {
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid $silver;
+        height: 180px;
+        width: 180px;
+        padding: 25px;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        @include centered;
+        img {
+          cursor: pointer;
+          width: 80px;
+        }
+      }
+      .texts-block {
+          @include centered;
+          margin-bottom: 5vh;
+          text-align: center;
+          .row {
+              width: $full-percent;
+              @include centered;
+              h6 {
+                  font-family: $family-medium;
+                  cursor: pointer;
+                  a{
+                    text-decoration: none;
+                    color: $text-color;
+                }
+              }
+              p {
+                  text-align: center;
+                  svg {
+                      margin-right: 10px;
+                      cursor: pointer;
+                  }
+              }
+              .p2 {
+                  font-size: 0.6rem;
+                  margin-top: 2vh;
+                  padding-left: 0px;
+              }
+          }
+      }
+    }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 1200PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 1200px) {
+
+  //SWIPERS BLOC 3
+  .Swipers {
+    height: 75vh;
+    margin-top: 5vh;
+    .row {
+      .swiper{
+        .swiper-slide{
+          .row{
+            .image-collab {
+              img {
+                width: 80%;
+                margin-top: -3vh;
+              }
+            }
+            .info-collab {
+              height: 100px;
+              width: 85%;
+              margin-top: -55vh;
+              p {
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 28%;
+    left: 36%;
+    .row {
+      .logo-block {
+        height: 165px;
+        width: 165px;
+      }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 992PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 992px) {
+
+  //SWIPERS BLOC 3
+  .Swipers {
+    height: 85vh;
+    margin-top: 0vh;
+    .row {
+      .swiper{
+        .swiper-slide{
+          .row{
+            .image-collab {
+              img {
+                width: 92%;
+                margin-top: -3vh;
+              }
+            }
+            .info-collab {
+              height: 100px;
+              width: $full-percent;
+              margin-top: -65vh;
+              p {
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 35%;
+    left: 32.5%;
+    .row {
+      .logo-block {
+        height: 160px;
+        width: 160px;
+      }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 768PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 768px) {
+
+  //SWIPERS BLOC 3
+  .Swipers {
+    height: 95vh;
+    margin-top: -5vh;
+    .row {
+      .swiper{
+        .swiper-slide{
+          .row{
+            .image-collab {
+              img {
+                width: $full-percent;
+                margin-top: -3vh;
+              }
+            }
+            .info-collab {
+              height: 100px;
+              width: $full-percent;
+              margin-top: -75vh;
+              p {
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      .swip-pc {
+        display: none;
+      }
+      .swip-mobile {
+        display: block;
+      }
+
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 50%;
+    left: 25%;
+    .row {
+      .logo-block {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
 }

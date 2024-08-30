@@ -8,6 +8,8 @@
     background-repeat: $no-repeat;
     background-size: cover;
     color: $white;
+    padding: $null;
+    margin: $null;
     .Coverage-blc {
         width: $full-percent;
         margin-top: 4vh;
@@ -16,10 +18,10 @@
         @include centered;
         .row {
             img {
-                height: 180px;
+                height: 130px;
                 padding: 30px;
                 border-radius: 50%;
-                background: rgba(242, 242, 242, .5);
+                background: rgba(242, 242, 242, .25);
                 cursor: pointer;
             }
             .h1 {
@@ -58,11 +60,63 @@
         margin-left: 7.5%;
         width: 85%;
     }
+    .Coverage-logo {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    .coverage-menu {
+        @include centered;
+        background: rgba(13, 13, 13, .5);
+        height: $full-percent;
+        width: $full-percent;
+        .bi-x{
+            margin-top: 2vh;
+            cursor: pointer;
+        }
+        .logo-block {
+            margin-bottom: 1vh;
+            img {
+                height: 180px;
+                padding: 30px;
+                border-radius: 50%;
+                background: rgba(242, 242, 242, .25);
+                cursor: pointer;
+            }
+        }
+    }
+    .divs-block {
+      @include centered;
+      .row {
+          width: $full-percent;
+          @include centered;
+      }
+    }
     .texts-block {
         @include centered;
+        margin-bottom: 5vh;
         .row {
             width: $full-percent;
             @include centered;
+            h6 {
+                font-family: $family-medium;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+            p {
+                text-align: center;
+                svg {
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            .p2 {
+                font-size: 0.6rem;
+                padding-left: 0px;
+                letter-spacing: 3px;
+            }
         }
     }
 }
@@ -106,4 +160,28 @@
             @include centered;
         }
     }
+}
+
+
+
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 992PX) -----------------------------------------------------------/*/
+@media screen and (max-width: 992px) {
+  //ACCORDION CONTAINER BLOC 2
+  .Accordions {
+    height: auto;
+    margin-top: 7vh;
+    .row {
+        .accordion-blc {
+            height: auto;
+            margin-top: 0vh;
+            margin-bottom: 5vh;
+        }
+        .logo-illustration {
+          display: none;
+        }
+    }
+  }
+
 }

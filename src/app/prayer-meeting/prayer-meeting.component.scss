@@ -1,0 +1,53 @@
+@import "../../app/partials/utils/variables";
+
+.container {
+  border: 5px solid #b39a4a;
+  height: 740px;
+  width: 1520px;
+  margin: 2vh;
+  margin-left: 7%;
+  background: $bgdarkbrown;
+  @include centered;
+  .row {
+    height: $full-percent;
+    width: $full-percent;
+    @include centered;
+    img {
+      width: auto;
+      height: 210px;
+      width: 210px;
+    }
+    .date {
+      background: $phil-yellow;
+      width: auto;
+      font-size: 1.3rem;
+      color: $bgdarkbrown;
+      font-family: $family-bold;
+      padding: 8px;
+      letter-spacing: 3px;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+      font-family: $family-light;
+      color: $phil-yellow;
+      font-size: 1.9rem;
+      word-spacing: 100px;
+      margin-top: -10vh;
+    }
+    h1 {
+      text-align: center;
+      font-family: $family-bold;
+      color: $phil-yellow;
+      font-size: 4rem;
+      letter-spacing: 10px;
+      letter-spacing: 5px;
+      margin-top: -22vh;
+      span {
+        font-family: $family-light;
+        font-size: 1.5rem;
+      }
+    }
+
+  }
+}

@@ -13,6 +13,9 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { CptrainingComponent } from './cptraining/cptraining.component';
 import { CptourComponent } from './cptour/cptour.component';
 import { ElearningComponent } from './elearning/elearning.component';
+import { CpdayComponent } from './cpday/cpday.component';
+import { PrayerMeetingComponent } from './prayer-meeting/prayer-meeting.component';
+import { PosterComponent } from './poster/poster.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ElearningComponent } from './elearning/elearning.component';
     ActivitiesComponent,
     CptrainingComponent,
     CptourComponent,
-    ElearningComponent
+    ElearningComponent,
+    CpdayComponent,
+    PrayerMeetingComponent,
+    PosterComponent
   ],
   imports: [
     BrowserModule,

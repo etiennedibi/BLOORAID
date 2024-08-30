@@ -3,6 +3,7 @@
 //BLOC 1
 .bloc-1 {
     height: $full-vh;
+    width: 85%;
     padding: $null;
     @include centered;
     .row {
@@ -58,7 +59,7 @@
 .bloc-2{
     overflow-y: $no-overflow;
     height: 80vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     padding: $null;
     @include centered;
     .row {
@@ -116,6 +117,9 @@
                     margin-right: 0px;
                 }
             }
+            .swip-mobile {
+              display: none;
+            }
         }
 
     }
@@ -124,9 +128,10 @@
 //BLOC 3
 .bloc-3 {
     overflow: $no-overflow;
-    height: $full-vh;
     width: $full-percent;
     padding: $null;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     @include centered;
     .button {
         width: $full-percent;
@@ -157,3 +162,221 @@
         }
     }
 }
+
+.coverage-menu {
+  border: 3px solid $silver;
+  border-radius: 5px;
+  background: white;
+  position: fixed;
+  width: 20%;
+  height: 90vh;
+  top: 5vh;
+  left: 8%;
+  z-index: 10;
+  display: none;
+  .row {
+    @include centered;
+    .bi-x{
+      margin-top: 3vh;
+      cursor: pointer;
+    }
+    .logo-block {
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid $silver;
+      height: 180px;
+      width: 180px;
+      padding: 25px;
+      margin-bottom: 2vh;
+      margin-top: 2vh;
+      @include centered;
+      img {
+        cursor: pointer;
+        width: 80px;
+      }
+    }
+    .texts-block {
+        @include centered;
+        margin-bottom: 5vh;
+        text-align: center;
+        .row {
+            width: $full-percent;
+            @include centered;
+            h6 {
+                font-family: $family-medium;
+                cursor: pointer;
+                a{
+                  text-decoration: none;
+                  color: $text-color;
+              }
+            }
+            p {
+                text-align: center;
+                svg {
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            .p2 {
+                font-size: 0.6rem;
+                margin-top: 2vh;
+                padding-left: 0px;
+            }
+        }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 1200PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 1200px) {
+  //
+  .bloc-1{
+    width: 90%;
+    .row {
+      .content-left {
+        .buttons {
+            button {
+              h1 {
+                font-size: $size-lg-great;
+              }
+            }
+        }
+        .texts {
+            p {
+              font-size: 1rem;
+            }
+        }
+      }
+      .content-image {
+        height: $full-percent;
+        margin-top: 12vh;
+      }
+    }
+  }
+
+  //
+  .bloc-3 {
+    .row {
+      .coffrets {
+        .row{
+          width: 85%;
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 25%;
+    .row {
+      .logo-block {
+        height: 160px;
+        width: 160px;
+      }
+    }
+  }
+}
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 992PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 992px) {
+
+  //
+  .bloc-1{
+    width: $full-percent;
+    .row {
+      .content-left {
+        .buttons {
+          button {
+            h1 {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //
+  .bloc-3 {
+    .row {
+      .coffrets {
+        .row{
+          width: $full-percent;
+        }
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 30%;
+    left: 2%;
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 768PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 768px) {
+
+  //
+  .bloc-1{
+    .row {
+      .content-left {
+        text-align: center;
+
+        .logo-block {
+          @include centered;
+        }
+
+        .buttons {
+            margin-left: -5%;
+            button {
+              h1 {
+                font-size: $size-lg-great;
+              }
+            }
+        }
+        .texts {
+          @include centered;
+            p {
+              font-size: 1rem;
+              text-align: center;
+            }
+        }
+      }
+      .content-image {
+        display: none;
+      }
+    }
+  }
+
+  .bloc-2 {
+    margin-top: 5vh;
+    .row {
+      .coffrets {
+        .swip-pc {
+          display: none;
+        }
+        .swip-mobile {
+          display: block;
+        }
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 40%;
+    left: 30%;
+    .row {
+      .logo-block {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+ }

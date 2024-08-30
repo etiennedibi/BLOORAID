@@ -9,18 +9,21 @@
     background-size: cover;
     color: $white;
     overflow: $no-overflow;
+    padding: $null;
+    margin: $null;
     .Coverage-blc {
-        width: $full-percent;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 4vh;
         text-align: center;
         @include centered;
         .row {
             img {
                 position: relative;
-                height: 180px;
+                height: 130px;
                 padding: 30px;
                 border-radius: 50%;
-                background: rgba(242, 242, 242, .5);
+                background: rgba(242, 242, 242, .25);
                 cursor: pointer;
             }
             .h1 {
@@ -37,52 +40,179 @@
             }
             .item-div {
                 display: none;
-                padding: 0 14% 0 12%;
                 .btn {
                     background: $violet;
-                    color: $white;
                     font-family: $family-bold;
                     padding: 5px 50px 5px 50px;
                     margin-left: 20px;
                     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                     display: none;
+                    a {
+                      text-decoration: none;
+                      color: $white;
+                    }
                 }
                 .btn-formation {
-                    background: $principal-gradient;
-                    width: 280px;
+                  width: 280px;
+                  background: $second-gradient;
+                }
+                .btn-logiciel {
+                  background: $pink2;
+                }
+                .btn-simplex{
+                  margin-left: -25%;
                 }
                 .btn-audit {
                     background: $pink2;
+                    margin-left: 27%;
                 }
             }
             .div{
-                height: 27vh;
+                height: 20vh;
                 margin-top: 8vh;
                 cursor: pointer;
                 position: relative;
                 @include centered;
-                h2 {
+                h5 {
                     font-family: $family-medium;
                     margin-top: 2vh;
                 }
             }
             .div-1 {
-                background: $violet;
+                background: $second-gradient;
             }
-            .div-2 {
-                background: $principal-gradient;
-            }
-            .div-3 {
+            .div-3, .div-2 {
                 background: $pink2;
             }
+            .div-4 {
+              background: $third-gradient;
+            }
         }
     }
-    .texts-block, .divs-block {
-        margin-top: 8vh;
+    .Coverage-logo {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    .coverage-menu {
+      @include centered;
+      background: rgba(13, 13, 13, .5);
+      height: $full-percent;
+      width: $full-percent;
+      .bi-x{
+          margin-top: 2vh;
+          cursor: pointer;
+      }
+      .Coverage-blc {
+        margin-left: 0%;
+      }
+      .logo-block {
+          margin-bottom: 1vh;
+          img {
+              height: 180px;
+              padding: 30px;
+              border-radius: 50%;
+              background: rgba(242, 242, 242, .25);
+              cursor: pointer;
+          }
+      }
+  }
+  .divs-block {
+      @include centered;
+      .row {
+          width: $full-percent;
+          @include centered;
+      }
+  }
+
+  .texts-block {
+    @include centered;
+    margin-bottom: 5vh;
+    .row {
+        width: $full-percent;
         @include centered;
-        .row {
-            width: $full-percent;
-            @include centered;
+        h6 {
+            font-family: $family-medium;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        p {
+            text-align: center;
+            svg {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+        .p2 {
+            font-size: 0.6rem;
+            padding-left: 0px;
+            letter-spacing: 3px;
         }
     }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 1200PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 1200px) {}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 992PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 992px) {
+  .Coverage {
+    background: linear-gradient(360deg, rgba(13, 13, 13, 6), #0D0D0D5d), url('../../assets/medias/products/img2.jpeg');
+    @include background-image;
+    @include centered;
+    background-repeat: $no-repeat;
+    background-size: cover;
+    color: $white;
+    overflow: $no-overflow;
+    padding: $null;
+    margin: $null;
+    .divs-block {
+      .row {
+        .item-div {
+          .btn {
+            font-size: 0.9rem;
+          }
+          .btn-formation{
+            width: 230px;
+          }
+        }
+        .div{
+          h5 {
+            font-size: $size-normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 768PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 768px) {
+  .divs-block {
+    .row {
+      .item-div {
+        .btn {
+          font-size: 0.8rem;
+        }
+        .btn-formation{
+          width: 50px;
+          padding: 5px;
+          span{
+            display: none;
+          }
+        }
+      }
+      .div{
+        h5 {
+          display: none;
+        }
+      }
+    }
+  }
 }

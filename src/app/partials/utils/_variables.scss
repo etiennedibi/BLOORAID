@@ -28,6 +28,31 @@ $pink2: #BF267A;
 $pink2-rgba: rgba(191, 38, 122, 1);
 
 $principal-gradient: linear-gradient(90deg, #73378C, #BF267A);
+$second-gradient: linear-gradient(75deg, #73378C, #BF267A);
+$third-gradient: linear-gradient(100deg, #BF267A, #73378C);
+
+
+
+//COCODY PHILADELPHIE LOGO COLOR
+$phil-yellow:#b39a4a;
+$phil-yellow-rgba: rgba(179, 154, 74, 1);
+
+$phil-brown:#562c2e;
+$phil-brown-rgba: rgba(86, 44, 46, 1);
+
+$phil-black:#000000;
+$phil-black-rgba: rgba(0, 0, 0, 1);
+
+$phil-white:#ffffff;
+$phil-white-rgba: rgba(255, 255, 255, 255);
+
+$bgaffiche: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,35,37,1) 100%, rgba(86,44,46,1) 100%);
+$bgdarkbrown: #0c0707;
+
+
+$posterbg1: #202022;
+$posterbg2: #222224;
+
 
 
 /* les dimensions, taille et poids de base */
@@ -58,3 +83,4 @@ $family-light: 'light';
 $family-italic: 'italic';
 $family-medium: 'medium';
 $family-bold: 'bold';
+$family-space: 'space';

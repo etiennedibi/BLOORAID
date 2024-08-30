@@ -4,6 +4,7 @@
 .bloc-1 {
     height: $full-vh;
     padding: $null;
+    width: 90%;
     @include centered;
     .row {
         width: $full-percent;
@@ -31,10 +32,13 @@
                 position: relative;
                 width: 150%;
                 button {
-                    background: $principal-gradient;
-                    color: $white;
-                    font-family: $family-bold;
-                    margin-bottom: 5px;
+                  background: $principal-gradient;
+                  color: $white;
+                  font-family: $family-bold;
+                  margin-bottom: 5px;
+                  h1 {
+                    font-size: $size-lg-great;
+                  }
                 }
             }
             .texts {
@@ -216,6 +220,9 @@
                 }
 
             }
+            .swip-mobile {
+              display: none;
+            }
             .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
                 background-image: none;
             }
@@ -247,16 +254,302 @@
         .row{
             width: 70%;
             @include centered;
-            p {
-                font-size: 1.2rem;
-                margin-top: 5vh;
+            .text {
+                @include centered;
+                .row{
+                    width: $full-percent;
+                    p {
+                        font-size: 1.2rem;
+                        margin-top: 5vh;
+                    }
+                    .player {
+                        height: 130px;
+                        width: 130px;
+                        border-radius: 50%;
+                        background: rgba(242, 242, 242, .6);
+                        padding: 10px;
+                        @include centered;
+                        margin-top: 3vh;
+                        cursor: pointer;
+                        div {
+                            background: white;
+                            width: $full-percent;
+                            height: $full-percent;
+                            border-radius: 50%;
+                            @include centered;
+                            svg {
+                                color: $pink2;
+                            }
+                        }
+                    }
+                }
             }
             .form {
                 border: 1px solid $silver;
                 border-radius: 5px;
-                padding: 30px;
-                margin-top: 2vh;
+                padding: 20px;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                @include centered;
+                form {
+                    width: $full-percent;
+                    h2 {
+                        font-family: $family-bold;
+                        text-align: center;
+                        margin-bottom: 3vh;
+                    }
+                    .input-group {
+                        width: 79%;
+                        margin-top: 1vh;
+                        @include centered;
+                        input {
+                            height: 50px;
+                            margin-top: 1vh;
+                            border-radius: 5px;
+                            color: $black;
+                            border-top-right-radius: 5px;
+                        }
+                        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: $black;
+                            opacity: 1; /* Firefox */
+                        }
+
+                        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: $black;
+                        }
+
+                        ::-ms-input-placeholder { /* Microsoft Edge */
+                            color: $black;
+                        }
+                        .btn-auth {
+                            color: $white;
+                            background: $principal-gradient;
+                            font-family: $family-bold;
+                            width: 200px;
+                        }
+                    }
+                    .form-select {
+                        height: 50px;
+                        width: 75%;
+                        margin-top: 2vh;
+                    }
+                }
             }
         }
     }
 }
+
+.coverage-menu {
+  border: 3px solid $silver;
+  border-radius: 5px;
+  background: white;
+  position: fixed;
+  width: 20%;
+  height: 90vh;
+  top: 5vh;
+  right: 30%;
+  z-index: 10;
+  display: none;
+  .row {
+    @include centered;
+    .bi-x{
+      margin-top: 3vh;
+      cursor: pointer;
+    }
+    .logo-block {
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid $silver;
+      height: 180px;
+      width: 180px;
+      padding: 25px;
+      margin-bottom: 2vh;
+      margin-top: 2vh;
+      @include centered;
+      img {
+        cursor: pointer;
+        width: 80px;
+      }
+    }
+    .texts-block {
+        @include centered;
+        margin-bottom: 5vh;
+        text-align: center;
+        .row {
+            width: $full-percent;
+            @include centered;
+            h6 {
+                font-family: $family-medium;
+                cursor: pointer;
+                a{
+                  text-decoration: none;
+                  color: $text-color;
+              }
+            }
+            p {
+                text-align: center;
+                svg {
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            .p2 {
+                font-size: 0.6rem;
+                margin-top: 2vh;
+                padding-left: 0px;
+            }
+        }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 1200PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 1200px) {
+  //
+  .bloc-1{
+    width: 95%;
+    .row {
+      .content-left {
+        .buttons {
+            button {
+              h1 {
+                font-size: 2rem;
+              }
+            }
+        }
+        .texts {
+            p {
+              font-size: 1rem;
+            }
+        }
+      }
+    }
+  }
+
+  //
+  .bloc-3 {
+    .row {
+      .coffrets {
+        .row{
+          width: 85%;
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 25%;
+    .row {
+      .logo-block {
+        height: 160px;
+        width: 160px;
+      }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 992PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 992px) {
+
+  //
+  .bloc-1{
+    width: $full-percent;
+    .row {
+      .content-left {
+        .buttons {
+          button {
+            h1 {
+              font-size: 1.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //
+  .bloc-3 {
+    .row {
+      .coffrets {
+        .row{
+          width: $full-percent;
+        }
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 30%;
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 768PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 768px) {
+
+  //
+  .bloc-1{
+    .row {
+      .content-left {
+        text-align: center;
+
+        .logo-block {
+          @include centered;
+        }
+
+        .buttons {
+            margin-left: -5%;
+            button {
+              h1 {
+                font-size: $size-lg-great;
+              }
+            }
+        }
+        .texts {
+          @include centered;
+            p {
+              font-size: 1rem;
+              text-align: center;
+            }
+        }
+      }
+      .content-image {
+        display: none;
+      }
+    }
+  }
+
+  .bloc-2 {
+    margin-top: 5vh;
+    .row {
+      .coffrets {
+        .swip-pc {
+          display: none;
+        }
+        .swip-mobile {
+          display: block;
+        }
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 40%;
+    left: 30%;
+    .row {
+      .logo-block {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+ }
+

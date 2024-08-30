@@ -1,0 +1,56 @@
+@import "../../app/partials/utils/variables";
+
+
+.cont-logo{
+  height: 700px;
+  width: 700px;
+  margin-top: 5vh;
+  margin-left: 30%;
+  background: $phil-white;
+  border: 1px solid $phil-black;
+  @include centered;
+  .row {
+    height: $full-percent;
+    width: $full-percent;
+    @include centered;
+  }
+}
+
+.circle-cont {
+  @include centered;
+  .circle-logo {
+    background: $phil-white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 10px solid $phil-black;
+    @include centered;
+    .row {
+      height: $full-percent;
+      width: $full-percent;
+      @include centered;
+
+      .img1{
+        margin-top: 1vh;
+      }
+      .img {
+        margin-top: -30vh;
+        width: 250px;
+        position: relative;
+      }
+      .img2 {
+        margin-top: -19vh;
+        position: relative;
+      }
+      h3 {
+        text-align: center;
+        font-family: $family-space;
+        color: $phil-brown;
+        margin-top: -18vh;
+        letter-spacing: 5px;
+        line-height: 37px;
+      }
+    }
+
+  }
+}

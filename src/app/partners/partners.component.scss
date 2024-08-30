@@ -14,17 +14,16 @@
 }
 //LOGO BLOC 1
 .Coverage-blc {
-    width: $full-percent;
     text-align: center;
     border-radius: 50%;
     border: 1px solid $silver;
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     padding: 25px;
     @include centered;
     img {
         cursor: pointer;
-        height: 120px;
+        height: 100px;
     }
 }
 //BUTTONS BLOC 2
@@ -35,9 +34,10 @@
     .btn {
         width: 200px;
         border: 1px solid $silver;
+        background: $principal-gradient;
         border-radius: 5px;
-        color: $text-color;
-        font-family: $family-light;
+        color: $white;
+        font-family: $family-bold;
         margin-left: 10px;
     }
 }
@@ -62,21 +62,17 @@
                 filter: blur(2.5px);
                 .rows {
                     height: $full-percent;
-                    width: 90%;
+                    width: 95%;
                     border-radius: 50%;
                     @include centered;
                     .logo-slide {
-                        @include centered;
-                        img {
-                            height: 220px;
-                        }
-                        .wac {
-                            position: relative;
-                            height: 260px;
-                        }
+                      @include centered;
+                      img {
+                        height: 180px;
+                      }
                     }
                     .cover-slide {
-                        height: 110px;
+                        height: auto;
                         width: $full-percent;
                         border-radius: 5px;
                         position: relative;
@@ -85,15 +81,14 @@
                         border: 1px solid $silver;
                         background: white;
                         margin: $null;
+                        padding: 15px;
                         display: none;
                         h6 {
-                            font-family: $family-bold;
-                            color: $black;
-                            margin-top: 8px;
+                          font-family: $family-bold;
+                          color: $black;
                         }
                         p {
                             color: $text-color;
-                            font-size: $size-small;
                             line-height: 19px;
                             span {
                                 position: relative;
@@ -111,8 +106,8 @@
 
             .swiper-slide-active{
                 filter: blur(0px);
-                width: 92%;
-                height: 92%;
+                width: $full-percent;
+                height: $full-percent;
                 .rows {
                     border: 2px solid $silver;
                     .cover-slide {
@@ -141,11 +136,194 @@
                 margin-right: 40px;
             }
         }
-        .Dev, .Cyber, .Market{
-            display: none;
+        .swip-mobile {
+          display: none;
         }
         .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
             background-image: none;
         }
     }
+}
+
+.coverage-menu {
+  border: 2px solid $silver;
+  border-radius: 5px;
+  background: white;
+  position: fixed;
+  width: 20%;
+  height: 90vh;
+  top: 5vh;
+  left: 40%;
+  z-index: 10;
+  display: none;
+  .row {
+    .bi-x{
+      margin-top: 3vh;
+      cursor: pointer;
+    }
+    .logo-block {
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid $silver;
+      height: 180px;
+      width: 180px;
+      padding: 25px;
+      margin-bottom: 2vh;
+      margin-top: 2vh;
+      @include centered;
+      img {
+        cursor: pointer;
+        width: 80px;
+      }
+    }
+    .texts-block {
+        @include centered;
+        margin-bottom: 5vh;
+        text-align: center;
+        .row {
+            width: $full-percent;
+            @include centered;
+            h6 {
+                font-family: $family-medium;
+                cursor: pointer;
+                a{
+                  text-decoration: none;
+                  color: $text-color;
+              }
+            }
+            p {
+                text-align: center;
+                svg {
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            .p2 {
+                font-size: 0.6rem;
+                margin-top: 2vh;
+                padding-left: 0px;
+            }
+        }
+    }
+  }
+}
+
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 1200PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 1200px) {
+
+  //SWIPERS BLOC 3
+  .Swipers {
+    height: 60vh;
+    .row {
+      .swiper{
+        .swiper-slide{
+          .row{
+            .logo-slide {
+              @include centered;
+              img {
+                margin-top: 0vh;
+                height: 200px;
+              }
+            }
+            .cover-slide {
+              padding: 5px;
+              margin-top: -10vh;
+              }
+            }
+          }
+        }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 28%;
+    left: 36%;
+    .row {
+      .logo-block {
+        height: 165px;
+        width: 165px;
+      }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 992PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 992px) {
+
+  //SWIPERS BLOC 3
+  .Swipers {
+    .row {
+      .swip-pc {
+        display: none;
+      }
+      .swip-mobile {
+        display: block;
+      }
+
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 35%;
+    left: 32.5%;
+    .row {
+      .logo-block {
+        height: 160px;
+        width: 160px;
+      }
+    }
+  }
+}
+
+
+/*/ ---------------------------------------------------------- RESPONSIVE DESIGN (MAX WIDTH: 768PX) --------------------------------------------------------------/*/
+@media screen and (max-width: 768px) {
+
+  //SWIPERS BLOC 3
+  .Swipers {
+    height: 65vh;
+    .row {
+      .swiper{
+        .swiper-slide{
+          .row{
+            .logo-slide {
+              img {
+                height: 140px;
+              }
+            }
+            .cover-slide {
+              padding: 5px;
+              p {
+                font-size: 0.8rem;
+              }
+
+            }
+          }
+        }
+      }
+      .swip-pc {
+        display: none;
+      }
+      .swip-mobile {
+        display: block;
+      }
+    }
+  }
+
+  //MENUS
+  .coverage-menu {
+    width: 50%;
+    left: 25%;
+    .row {
+      .logo-block {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
 }
