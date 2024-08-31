@@ -6,7 +6,7 @@
   width: 700px;
   margin-top: 5vh;
   margin-left: 30%;
-  background: $phil-white;
+  background: $phil-blue;
   border: 1px solid $phil-black;
   @include centered;
   .row {
@@ -19,7 +19,7 @@
 .circle-cont {
   @include centered;
   .circle-logo {
-    background: $phil-white;
+    background: $phil-blue;
     height: 400px;
     width: 400px;
     border-radius: 50%;
